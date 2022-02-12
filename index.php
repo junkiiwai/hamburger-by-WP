@@ -3,7 +3,7 @@
     <main class="p-main--front">
         <section class="p-frontTop">
             <img class="p-frontTop__img" src="<?php echo get_template_directory_uri(); ?>/img/top.svg">
-            <h1 class="c-color--white p-frontTop__title">ダミーサイト</h1>
+            <h1 class="c-color--white p-frontTop__title">ダミーサイトですよ</h1>
         </section>
         <section class="c-bgcolor--white p-frontCenter">
             <div class="p-frontContent">
