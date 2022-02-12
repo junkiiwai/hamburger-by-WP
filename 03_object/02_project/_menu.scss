@@ -1,0 +1,27 @@
+@use "breakpoints" as bp;
+
+.p-menu {
+  position: absolute;
+  top: 60px;
+  white-space: nowrap;
+  margin-left: 40px;
+  .p-menu__title{
+  font-size: 34px;
+  padding-bottom: 60px;
+  @include bp.bp-mq(pc-926px){
+    color: #808080;
+  }
+}
+  .p-menu__group {
+    .p-menu__genre {
+      font-size: 24px;
+      margin: 50px 0 30px 0;
+      display: block;
+    }
+    .p-menu__list {
+      font-size: 20px;
+      margin: 13px 10px;
+      padding: 5px;
+    }
+  }
+}
