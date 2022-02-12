@@ -7,7 +7,7 @@
         </section>
         <section class="c-bgcolor--white p-frontCenter">
             <div class="p-frontContent">
-                <a class="c-linkDecoNone" href="archive.html">
+                <a class="c-linkDecoNone" href="<?php echo get_tag_link(14); ?>">
                     <img class="p-frontContent__img" src="<?php echo get_template_directory_uri(); ?>/img/takeout.svg">
                     <h2 class="c-color--white p-frontContent__title">Take Out</h2>
                     <span class="c-underbar--w40px p-frontContent__underbar"></span>
@@ -28,7 +28,7 @@
                 </a>
             </div>
             <div class="p-frontContent">
-                <a class="c-linkDecoNone" href="archive.html">
+                <a class="c-linkDecoNone" href="<?php echo get_tag_link(7); ?>">
                     <img class="p-frontContent__img" src="<?php echo get_template_directory_uri(); ?>/img/eatin.svg">
                     <h2 class="c-color--white p-frontContent__title">Eat In</h2>
                     <span class="c-underbar--w40px p-frontContent__underbar"></span>
