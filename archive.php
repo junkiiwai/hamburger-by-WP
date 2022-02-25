@@ -29,8 +29,8 @@
     <section class="p-arcTop">
         <img class="p-arcTop__img" src="<?php echo get_template_directory_uri(); ?>/img/arcTop.svg">
         <div class="p-arcTop__title">
-            <h2 class="c-color--white p-arcTop__title__main">Menu：</h2>
-            <h3 class="c-color--white p-arcTop__title__sub">チーズバーガー</h3>
+            <h2 class="c-color--white c-font--fam--robot p-arcTop__title__main">Menu：</h2>
+            <h3 class="c-color--white p-arcTop__title__sub"><?php single_tag_title(); ?></h3>
         </div>
     </section>
 
@@ -94,7 +94,8 @@
         </div> -->
 
     </section>
-    <ol class="p-pagenation">
+    <?php if(function_exists('wp_pagenavi')){wp_pagenavi();}?>
+    <!-- <ol class="p-pagenation">
         <p class="c-color--darkbrown p-pagenation__page">page 1/10</p>
         <li class="c-listDotNone c-color--gray p-pagenation__list--lt"><a class="c-linkDecoNone c-color--gray" href="#">&lt;&lt;
             </a></li>
@@ -111,7 +112,7 @@
         <li class="c-listDotNone c-color--gray p-pagenation__list--gt"><a class="c-linkDecoNone c-color--gray" href="#">
                 &gt;&gt;
             </a></li>
-    </ol>
+    </ol> -->
 </main>
 
 <?php get_sidebar(); ?>

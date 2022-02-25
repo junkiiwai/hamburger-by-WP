@@ -28,12 +28,13 @@
     <?php while (have_posts()) : the_post(); ?>
         <main class="p-main--single">
             <section class="p-singleTop">
-                <img class="p-singleTop__img" src="img/singleTop.svg">
-                <h1 class="c-color--white p-singleTop__title">h1 チーズバーガー</h1>
+                <?php the_post_thumbnail(); ?>
+                <h1 class="c-color--white p-singleTop__title"><?php the_title(); ?></h1>
             </section>
-
+            
             <section class="c-color--darkbrown c-bgcolor--white p-singleCenter">
-                <h2 class="p-singleCenter__title1">見出しh2</h2>
+            <?php the_content(); ?>
+                <!-- <h2 class="p-singleCenter__title1">見出しh2</h2>
                 <p class="p-singleCenter__text">
                     Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。
                 </p>
@@ -130,7 +131,7 @@
                     </tr>
                 </table>
                 <p class="p-singleCenter__btn"><a class="c-linkDecoNone c-color--gray p-singleCenter__btn__btn" href="#"><input type="submit" class="c-font--weight--bold c-color--darkbrown c-btn--search p-singleCenter__btn__btn__btn" value="ボタン"></a></p>
-                <p class="c-font--weight--bold p-singleCenter__bold">boldboldboldboldboldboldbold</p>
+                <p class="c-font--weight--bold p-singleCenter__bold">boldboldboldboldboldboldbold</p> -->
             </section>
 
         </main>

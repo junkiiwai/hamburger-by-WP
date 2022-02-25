@@ -1,30 +1,39 @@
 <section class="c-color--gray c-bgcolor--gray p-sidebar">
     <span class="c-xCross p-menutab--close"></span>
     <nav class="p-menu">
-        <h2 class="c-color--lightgray c-font--weight--bold p-menu__title">Menu</h2>
-        <ul class="p-menu__group"><a class="c-linkDecoNone c-color--gray c-font--weight--bold p-menu__genre" href="archive.html">バーガー</a>
-            <li class="c-font--weight--normal c-listDotNone p-menu__list"><a class="c-linkDecoNone c-color--gray" href="single.html">ハンバーガー</a></li>
-            <li class="c-font--weight--normal c-listDotNone p-menu__list"><a class="c-linkDecoNone c-color--gray" href="single.html">チーズバーガー</a></li>
-            <li class="c-font--weight--normal c-listDotNone p-menu__list"><a class="c-linkDecoNone c-color--gray" href="single.html">テリヤキバーガー</a></li>
-            <li class="c-font--weight--normal c-listDotNone p-menu__list"><a class="c-linkDecoNone c-color--gray" href="single.html">アボカドバーガー</a></li>
-            <li class="c-font--weight--normal c-listDotNone p-menu__list"><a class="c-linkDecoNone c-color--gray" href="single.html">フィッシュバーガー</a></li>
-            <li class="c-font--weight--normal c-listDotNone p-menu__list"><a class="c-linkDecoNone c-color--gray" href="single.html">ベーコンバーガー</a></li>
-            <li class="c-font--weight--normal c-listDotNone p-menu__list"><a class="c-linkDecoNone c-color--gray" href="single.html">チキンバーガー</a></li>
+        <h2 class="c-color--lightgray c-font--weight--bold c-font--fam--robot p-menu__title">Menu</h2>
+        <?php
+        $args=array(
+            'menu'=>'Menu',  //管理画面で作成したメニュー名
+            'menu_class'=>'p-menu__group', //メニューを構成するulタグのclass名
+            'container'=>false, //<ul>を囲う<div>タグを削除
+        );
+        wp_nav_menu($args);
+        ?>
+       
+        <!-- <ul class="p-menu__group"><a class="c-linkDecoNone c-color--gray c-font--weight--bold p-menu__genre" href="<?php echo get_tag_link(8); ?>">バーガー</a>
+            <li class="c-font--weight--normal c-listDotNone p-menu__list"><a class="c-linkDecoNone c-color--gray" href="<?php echo get_tag_link(11); ?>">ハンバーガー</a></li>
+            <li class="c-font--weight--normal c-listDotNone p-menu__list"><a class="c-linkDecoNone c-color--gray" href="<?php echo get_tag_link(12); ?>">チーズバーガー</a></li>
+            <li class="c-font--weight--normal c-listDotNone p-menu__list"><a class="c-linkDecoNone c-color--gray" href="<?php echo get_tag_link(13); ?>">テリヤキバーガー</a></li>
+            <li class="c-font--weight--normal c-listDotNone p-menu__list"><a class="c-linkDecoNone c-color--gray" href="<?php echo get_tag_link(14); ?>">アボカドバーガー</a></li>
+            <li class="c-font--weight--normal c-listDotNone p-menu__list"><a class="c-linkDecoNone c-color--gray" href="<?php echo get_tag_link(15); ?>">フィッシュバーガー</a></li>
+            <li class="c-font--weight--normal c-listDotNone p-menu__list"><a class="c-linkDecoNone c-color--gray" href="<?php echo get_tag_link(16); ?>">ベーコンバーガー</a></li>
+            <li class="c-font--weight--normal c-listDotNone p-menu__list"><a class="c-linkDecoNone c-color--gray" href="<?php echo get_tag_link(17); ?>">チキンバーガー</a></li>
         </ul>
-        <ul class="p-menu__group"><a class="c-linkDecoNone c-color--gray c-font--weight--bold p-menu__genre" href="archive.html">サイド</a>
-            <li class="c-font--weight--normal c-listDotNone p-menu__list"><a class="c-linkDecoNone c-color--gray" href="single.html">ポテト</a></li>
-            <li class="c-font--weight--normal c-listDotNone p-menu__list"><a class="c-linkDecoNone c-color--gray" href="single.html">サラダ</a></li>
-            <li class="c-font--weight--normal c-listDotNone p-menu__list"><a class="c-linkDecoNone c-color--gray" href="single.html">ナゲット</a></li>
-            <li class="c-font--weight--normal c-listDotNone p-menu__list"><a class="c-linkDecoNone c-color--gray" href="single.html">コーン</a></li>
+        <ul class="p-menu__group"><a class="c-linkDecoNone c-color--gray c-font--weight--bold p-menu__genre" href="<?php echo get_tag_link(9); ?>">サイド</a>
+            <li class="c-font--weight--normal c-listDotNone p-menu__list"><a class="c-linkDecoNone c-color--gray" href="<?php echo get_tag_link(8); ?>">ポテト</a></li>
+            <li class="c-font--weight--normal c-listDotNone p-menu__list"><a class="c-linkDecoNone c-color--gray" href="<?php echo get_tag_link(8); ?>">サラダ</a></li>
+            <li class="c-font--weight--normal c-listDotNone p-menu__list"><a class="c-linkDecoNone c-color--gray" href="<?php echo get_tag_link(8); ?>">ナゲット</a></li>
+            <li class="c-font--weight--normal c-listDotNone p-menu__list"><a class="c-linkDecoNone c-color--gray" href="<?php echo get_tag_link(8); ?>">コーン</a></li>
         </ul>
-        <ul class="p-menu__group"><a class="c-linkDecoNone c-color--gray c-font--weight--bold p-menu__genre" href="archive.html">ドリンク</a>
-            <li class="c-font--weight--normal c-listDotNone p-menu__list"><a class="c-linkDecoNone c-color--gray" href="single.html">コーラ</a></li>
-            <li class="c-font--weight--normal c-listDotNone p-menu__list"><a class="c-linkDecoNone c-color--gray" href="single.html">ファンタ</a></li>
-            <li class="c-font--weight--normal c-listDotNone p-menu__list"><a class="c-linkDecoNone c-color--gray" href="single.html">オレンジ</a></li>
-            <li class="c-font--weight--normal c-listDotNone p-menu__list"><a class="c-linkDecoNone c-color--gray" href="single.html">アップル</a></li>
-            <li class="c-font--weight--normal c-listDotNone p-menu__list"><a class="c-linkDecoNone c-color--gray" href="single.html">紅茶（Ice/Hot）</a></li>
-            <li class="c-font--weight--normal c-listDotNone p-menu__list"><a class="c-linkDecoNone c-color--gray" href="single.html">コーヒー（Ice/Hot）</a></li>
-        </ul>
+        <ul class="p-menu__group"><a class="c-linkDecoNone c-color--gray c-font--weight--bold p-menu__genre" href="<?php echo get_tag_link(10); ?>">ドリンク</a>
+            <li class="c-font--weight--normal c-listDotNone p-menu__list"><a class="c-linkDecoNone c-color--gray" href="<?php echo get_tag_link(8); ?>">コーラ</a></li>
+            <li class="c-font--weight--normal c-listDotNone p-menu__list"><a class="c-linkDecoNone c-color--gray" href="<?php echo get_tag_link(8); ?>">ファンタ</a></li>
+            <li class="c-font--weight--normal c-listDotNone p-menu__list"><a class="c-linkDecoNone c-color--gray" href="<?php echo get_tag_link(8); ?>">オレンジ</a></li>
+            <li class="c-font--weight--normal c-listDotNone p-menu__list"><a class="c-linkDecoNone c-color--gray" href="<?php echo get_tag_link(8); ?>">アップル</a></li>
+            <li class="c-font--weight--normal c-listDotNone p-menu__list"><a class="c-linkDecoNone c-color--gray" href="<?php echo get_tag_link(8); ?>">紅茶（Ice/Hot）</a></li>
+            <li class="c-font--weight--normal c-listDotNone p-menu__list"><a class="c-linkDecoNone c-color--gray" href="<?php echo get_tag_link(8); ?>">コーヒー（Ice/Hot）</a></li>
+        </ul> -->
     </nav>
 </section>
 <div class="c-bgcolor--tpBlack p-menutab--bg"></div>
