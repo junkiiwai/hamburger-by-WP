@@ -36,18 +36,12 @@
     left: 6%;
   }
 }
-.p-singleTop .p-singleTop__img {
-  width: 250%;
-}
-@media screen and (min-width: 835px) {
-  .p-singleTop .p-singleTop__img {
-    height: 1047px;
-    width: auto;
-  }
-}
-@media screen and (min-width: 1920px) {
-  .p-singleTop .p-singleTop__img {
-    height: auto;
-    width: 100%;
-  }
+.p-singleTop img {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  min-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
 }

@@ -36,18 +36,11 @@
     left: 6%;
   }
 }
-.p-pageTop .p-pageTop__img {
-  width: 190%;
-}
-@media screen and (min-width: 835px) {
-  .p-pageTop .p-pageTop__img {
-    height: 500px;
-    width: auto;
-  }
-}
-@media screen and (min-width: 1920px) {
-  .p-pageTop .p-pageTop__img {
-    height: auto;
-    width: 100%;
-  }
+.p-pageTop img {
+  height: auto;
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
