@@ -28,17 +28,25 @@
       left: 6%;
     }
   }
-
-  .p-pageTop__img {
-    width: 190%;
-  
-    @include bp.bp-mq(pc-835px) {
-      height: 500px;
-      width: auto;
-    }
-    @include bp.bp-mq(pc-1920px) {
-      height: auto;
-      width: 100%;
-    }
+  img{
+    height: auto;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
   }
+
+
+  // .p-pageTop__img {
+  //   width: 190%;
+  
+  //   @include bp.bp-mq(pc-835px) {
+  //     height: 500px;
+  //     width: auto;
+  //   }
+  //   @include bp.bp-mq(pc-1920px) {
+  //     height: auto;
+  //     width: 100%;
+  //   }
+  // }
 }

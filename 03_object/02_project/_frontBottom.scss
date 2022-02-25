@@ -13,14 +13,11 @@
 
   .p-frontBottom__map {
     background-color: #343434;
-    height: 708px;
-    @include bp.bp-mq(pc-872px) {
-      width: 100%;
-      height: auto;
-    }
-    @include bp.bp-mq(pc-1293px) {
-      margin: 0;
-    }
+    width: auto;
+    height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
   }
   .p-frontBottom__titleText {
     position: absolute;

@@ -1,0 +1,20 @@
+.p-body {
+  margin: auto;
+  display: grid;
+  grid-template-rows: 217px 1fr 150px;
+  grid-template-columns: 1fr 0px;
+  gap: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  font-family: "M PLUS 1p", sans-serif;
+}
+@media screen and (min-width: 926px) {
+  .p-body {
+    grid-template-columns: 926px 367px;
+  }
+}
+@media screen and (min-width: 1293px) {
+  .p-body {
+    grid-template-columns: 1fr 367px;
+  }
+}

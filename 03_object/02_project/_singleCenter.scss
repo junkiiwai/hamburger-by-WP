@@ -1,11 +1,173 @@
 @use "breakpoints" as bp;
 
 .p-singleCenter {
+  padding-bottom: 20%;
+  min-height: 800px;
+  // WordPressで設定されたclassに対してCSS編集
+  h2 {
+    margin: calc(2% + 5px) 0;
+  }
   padding: 0 4%;
+  p {
+    margin: calc(2% + 3px) 0;
+  }
+  h3 {
+    margin: calc(2% + 10px) 0;
+  }
+  h4 {
+    margin: calc(2% + 5px) 0;
+  }
+  h5 {
+    margin: calc(2% + 5px) 0;
+  }
+  h6 {
+    margin: calc(2% + 5px) 0;
+  }
+  .p-singleCenter__quote {
+    padding: 4%;
+    margin: 4% 0;
+    p {
+      margin: 0 0 30px 0;
+    }
+    cite {
+      margin: 3% 0;
+      font-style: normal;
+    }
+  }
+
+  .wp-block-media-text {
+    display: flex;
+    align-items: flex-start;
+    margin: 5% 0;
+    .wp-block-media-text__media {
+      width: 35%;
+    }
+    .wp-block-media-text__content {
+      width: 65%;
+      padding: 0 2%;
+    }
+    &.is-stacked-on-mobile {
+      display: flex;
+      align-items: flex-start;
+      margin: 5% 0;
+      &.has-media-on-the-right {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        margin: 5% 0;
+      }
+    }
+  }
+  .wp-block-image {
+    margin: 0;
+    overflow: hidden;
+    figure {
+      width: 100%;
+      margin: 0;
+      &.aligncenter {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+  .wp-block-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 20px 0;
+    row-gap: 10px;
+    column-gap: 10px;
+    .wp-block-image {
+      width: 100% !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      @include bp.bp-mq(pad-435px) {
+        max-width: calc(50% - 5px) !important;
+      }
+      @include bp.bp-mq(pc-1293px) {
+        max-width: calc(100% / 3 - 20px / 3) !important;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .wp-block-group {
+    .wp-block-group__inner-container {
+      margin: 10% 0;
+      @include bp.bp-mq(pc-926px) {
+        margin: 85.2px 0;
+      }
+      ul {
+        padding: 0;
+        margin: calc(8px + 1%) 0 calc(8px + 1%) 0;
+        &:nth-child(2) {
+          margin-left: 1rem;
+        }
+        &:nth-child(3) {
+          margin-bottom: calc(50px + 1%);
+        }
+        &:nth-child(5) {
+          margin-left: 1rem;
+        }
+        @include bp.bp-mq(pad-435px) {
+          margin-left: 40px;
+          &:nth-child(2) {
+            margin-left: calc(1rem + 40px);
+          }
+          &:nth-child(5) {
+            margin-left: calc(1rem + 40px);
+          }
+        }
+        li {
+          list-style-type: none;
+        }
+      }
+    }
+  }
+
+  .wp-block-buttons {
+    width: 100%;
+    .wp-block-button {
+      display: flex;
+      justify-content: center;
+      margin: 5% 0;
+      @include bp.bp-mq(pad-376px) {
+        justify-content: flex-start;
+      }
+      @include bp.bp-mq(pc-926px) {
+        margin: 42.6px 0;
+      }
+
+      .wp-block-button__link {
+        text-decoration: none;
+        color: #3c2b1c;
+        font-weight: bold;
+        width: 100%;
+        padding: 30px;
+        border-radius: 15px;
+        background: linear-gradient(#f2ede9, #ded8d3);
+        border: 1px solid #707070;
+        padding: 5px 15px;
+        border-radius: 7px;
+        width: -webkit-fill-available;
+
+        @include bp.bp-mq(pad-376px) {
+          width: 345px;
+        }
+      }
+    }
+  }
+
+  // WordPressで設定されたclassに対してCSS編集（ここまで）
+
   .p-singleCenter__title1 {
     margin: calc(2% + 5px) 0;
   }
-  .p-singleCenter__text{
+  .p-singleCenter__text {
     margin: calc(2% + 3px) 0;
   }
   .p-singleCenter__title2 {

@@ -1,0 +1,95 @@
+@use "breakpoints" as bp;
+
+.wp-pagenavi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+  text-decoration: none;
+  @include bp.bp-mq(pad-600px) {
+    justify-content: center;
+  }
+  .pages {
+    //ページ数表示「◯/◯」
+    display: none;
+    @include bp.bp-mq(pad-600px) {
+      display: block;
+      margin: 5px;
+    }
+  }
+
+  .previouspostslink {
+    //前のページへ
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #808080;
+    margin: 25px 5px;
+    font-size: 20px;
+    &::after {
+      content: "前へ";
+      display: inline;
+      @include bp.bp-mq(pad-600px) {
+        display: none;
+      }
+    }
+  }
+
+  .extend {
+    //...
+    display: none;
+  }
+  .page {
+    display: none;
+    background-color: white;
+    color: #3c2b1c;
+    text-decoration: none;
+    @include bp.bp-mq(pad-600px) {
+      display: inline;
+      padding: 5px 9px;
+      margin: 25px 5px;
+      border: 1px solid rgba(128, 128, 128, 0.493);
+    }
+  }
+
+  .current {
+    //現在ページ
+    display: none;
+    background-color: #3c2b1c;
+    color: white;
+    text-decoration: none;
+    @include bp.bp-mq(pad-600px) {
+      display: inline;
+      padding: 5px 9px;
+      margin: 25px 5px;
+      border: 1px solid rgba(128, 128, 128, 0.493);
+    }
+  }
+  .nextpostslink {
+    //次のページへ
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #808080;
+    margin: 25px 5px;
+    font-size: 20px;
+    &::before {
+      content: "次へ";
+      display: inline;
+      @include bp.bp-mq(pad-600px) {
+        display: none;
+      }
+    }
+  }
+  .first{ //最初のページへ
+    display: none;
+  }
+  .last {
+    //最後のページへ
+    display: none;
+  }
+}

@@ -40,7 +40,7 @@
       }
     }
     .p-arcTop__title__sub {
-      font-size: 16px;
+      font-size: 24px;
       margin: 0;
       @include bp.bp-mq(pad-600px) {
         margin: auto 0;
@@ -50,7 +50,6 @@
   .p-arcTop__img {
     width: auto;
     height: 1450px;
-    margin-left: -225.115px;
     position: relative;
     @include bp.bp-mq(pc-1293px) {
       margin-left: auto;

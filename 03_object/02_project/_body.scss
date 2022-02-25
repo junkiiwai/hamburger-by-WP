@@ -8,7 +8,7 @@
     gap: 0;
     box-sizing: border-box;
     width: 100vw;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'M PLUS 1p', sans-serif;
 
     @include bp.bp-mq(pc-926px){
         grid-template-columns: 926px 367px;
