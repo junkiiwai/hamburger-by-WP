@@ -81,7 +81,7 @@
         <img class="p-frontBottom__map" src="<?php echo get_template_directory_uri(); ?>/img/map.svg">
         <?php
         $arg = array(
-            'category_name' => 'front_map', //category_nameはcategoryのslug名
+            'category_name' => 'map', //category_nameはcategoryのslug名
         );
         $posts = get_posts($arg);
         if ($posts) : ?>
