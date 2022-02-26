@@ -28,8 +28,9 @@
 
   .p-frontTop__img {
     width: auto;
-    height: 285px;
-    @include bp.bp-mq(pad-435px) {
+    max-width: none;
+    height: 327.77px;
+    @include bp.bp-mq(pad-500px) {
       width: 100vw;
       height: auto;
     }
