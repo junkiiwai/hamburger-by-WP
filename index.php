@@ -86,7 +86,7 @@
         $posts = get_posts($arg);
         if ($posts) : ?>
         <?php foreach ($posts as $post) : setup_postdata($post); ?>
-        <div class="c-titleText--fb c-bgcolor--tpBlack p-frontBottom__titleText">
+        <div class="c-titleText--fb p-frontBottom__titleText">
             <h3 class="c-color--white p-frontBottom__title"><?php the_title(); ?></h3>
             <span class="c-underbar--w100px p-frontBottom__underbar"></span>
             <article class="c-color--white p-frontBottom__text">

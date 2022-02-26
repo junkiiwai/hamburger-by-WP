@@ -40,11 +40,11 @@ $(function () {
 });
 
 // p-frontBottomの高さを文字の高さに応じて伸縮させる
-$(function () {
-  $(window).resize(function () {
-    const title = $(".p-frontBottom__title").outerHeight(true);
-    const underbar = $(".p-frontBottom__underbar").outerHeight(true);
-    const text = $(".p-frontBottom__text").outerHeight(true);
-    $(".p-frontBottom").css("height", title + underbar + text);
-  });
-});
+// $(function () {
+//   $(window).resize(function () {
+//     const title = $(".p-frontBottom__title").outerHeight(true);
+//     const underbar = $(".p-frontBottom__underbar").outerHeight(true);
+//     const text = $(".p-frontBottom__text").outerHeight(true);
+//     $(".p-frontBottom").css("height", title + underbar + text);
+//   });
+// });
