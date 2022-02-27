@@ -798,11 +798,20 @@ progress {
 .p-frontBottom .p-frontBottom__titleText {
   width: 100%;
   height: auto;
-  max-width: 950px;
 }
 @media screen and (min-width: 376px) {
   .p-frontBottom .p-frontBottom__titleText {
     background-color: #0000008f;
+  }
+}
+@media screen and (min-width: 1293px) {
+  .p-frontBottom .p-frontBottom__titleText {
+    width: 926px;
+  }
+}
+@media screen and (min-width: 1950px) {
+  .p-frontBottom .p-frontBottom__titleText {
+    width: calc((100vw - 367px) * 0.6);
   }
 }
 .p-frontBottom .p-frontBottom__titleText::after {
@@ -821,13 +830,13 @@ progress {
   }
 }
 .p-frontBottom .p-frontBottom__titleText .p-frontBottom__title {
-  margin: 5%;
+  margin: calc(5px + 5%);
 }
 .p-frontBottom .p-frontBottom__titleText .p-frontBottom__underbar {
-  margin: 5%;
+  margin: calc(5px + 5%);
 }
 .p-frontBottom .p-frontBottom__titleText .p-frontBottom__text {
-  margin: 5%;
+  margin: calc(5px + 5%);
 }
 
 .p-sidebar {
@@ -1330,17 +1339,17 @@ progress {
 .p-singleCenter ul li {
   list-style-type: none;
 }
-.p-singleCenter ul li:nth-child(2), .p-singleCenter ul li:nth-child(8) {
+.p-singleCenter ul li:nth-child(6n-4) {
   margin-bottom: 15px;
 }
-.p-singleCenter ul li:nth-child(3), .p-singleCenter ul li:nth-child(9) {
+.p-singleCenter ul li:nth-child(6n-3) {
   margin-left: 1rem;
 }
-.p-singleCenter ul li:nth-child(4), .p-singleCenter ul li:nth-child(10) {
+.p-singleCenter ul li:nth-child(6n-2) {
   margin-left: 1rem;
   margin-bottom: 15px;
 }
-.p-singleCenter ul li:nth-child(6), .p-singleCenter ul li:nth-child(12) {
+.p-singleCenter ul li:nth-child(6n) {
   margin-bottom: calc(50px + 1%);
 }
 .p-singleCenter .wp-block-buttons {

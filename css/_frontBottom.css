@@ -22,11 +22,20 @@
 .p-frontBottom .p-frontBottom__titleText {
   width: 100%;
   height: auto;
-  max-width: 950px;
 }
 @media screen and (min-width: 376px) {
   .p-frontBottom .p-frontBottom__titleText {
     background-color: #0000008f;
+  }
+}
+@media screen and (min-width: 1293px) {
+  .p-frontBottom .p-frontBottom__titleText {
+    width: 926px;
+  }
+}
+@media screen and (min-width: 1950px) {
+  .p-frontBottom .p-frontBottom__titleText {
+    width: calc((100vw - 367px) * 0.6);
   }
 }
 .p-frontBottom .p-frontBottom__titleText::after {
@@ -45,11 +54,11 @@
   }
 }
 .p-frontBottom .p-frontBottom__titleText .p-frontBottom__title {
-  margin: 5%;
+  margin: calc(5px + 5%);
 }
 .p-frontBottom .p-frontBottom__titleText .p-frontBottom__underbar {
-  margin: 5%;
+  margin: calc(5px + 5%);
 }
 .p-frontBottom .p-frontBottom__titleText .p-frontBottom__text {
-  margin: 5%;
+  margin: calc(5px + 5%);
 }

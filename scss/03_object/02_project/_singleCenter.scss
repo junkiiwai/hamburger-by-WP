@@ -100,21 +100,17 @@
     margin: calc(20px + 2%) 2%;
     li {
       list-style-type: none;
-      &:nth-child(2),
-      &:nth-child(8) {
+      &:nth-child(6n-4){
         margin-bottom: 15px;
       }
-      &:nth-child(3),
-      &:nth-child(9) {
+      &:nth-child(6n-3){
         margin-left: 1rem;
       }
-      &:nth-child(4),
-      &:nth-child(10) {
+      &:nth-child(6n-2){
         margin-left: 1rem;
         margin-bottom: 15px;
       }
-      &:nth-child(6),
-      &:nth-child(12) {
+      &:nth-child(6n){
         margin-bottom: calc(50px + 1%);
       }
 

@@ -17,6 +17,8 @@ $breakpoints: (
   'pc-1743px': '(min-width: 1743px)',
   'pc-1816px': '(min-width: 1816px)',
   'pc-1920px': '(min-width: 1920px)',
+  'pc-1950px': '(min-width: 1950px)',
+
 ) !default;
  
 @mixin bp-mq($name: pc-992px) {
