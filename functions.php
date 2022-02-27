@@ -5,7 +5,7 @@ function readScript(){
     wp_enqueue_style('robot', 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap', array(), '');
     wp_enqueue_style('mplus', 'https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&display=swap', array(), '');
 
-    wp_enqueue_style('css',get_template_directory_uri().'/style.css');
+    wp_enqueue_style('css',get_template_directory_uri().'/css/hamburger.css');
    //JS読み込み
     wp_deregister_script('jquery'); //WordPress 本体の jQuery を登録解除
     wp_enqueue_script('jquery',get_template_directory_uri().'/js/jquery-3.6.0.min.js',array(),'3.6.0',true);
